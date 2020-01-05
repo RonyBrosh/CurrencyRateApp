@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">RevolutAndroidTest</string>
+
+    <!-- Rates screen -->
+    <string name="rates_screen_actionbar_title">Rates</string>
+    <string name="rates_screen_get_rates_error">Oops!\nCan\'t get rates!</string>
+    <string name="rates_screen_snack_bar_action_error">Dismiss</string>
+    <string name="rates_screen_input_hint">0</string>
+
+    <string-array name="rate_names">
+        <item>Euro</item>
+        <item>Australian Dollar</item>
+        <item>Bulgarian Lev</item>
+        <item>Brazilian Real</item>
+        <item>Canadian Dollar</item>
+        <item>Swiss Franc</item>
+        <item>Yuan Renminbi</item>
+        <item>Czech Koruna</item>
+        <item>Danish Krone</item>
+        <item>Pound Sterling</item>
+        <item>Hong Kong Dollar</item>
+        <item>Kuna</item>
+        <item>Forint</item>
+        <item>Rupiah</item>
+        <item>New Israeli Sheqel</item>
+        <item>Indian Rupee</item>
+        <item>Iceland Krona</item>
+        <item>Yen</item>
+        <item>Won</item>
+        <item>Mexican Peso</item>
+        <item>Malaysian Ringgit</item>
+        <item>Norwegian Krone</item>
+        <item>New Zealand Dollar</item>
+        <item>Philippine Peso</item>
+        <item>Zloty</item>
+        <item>Romanian Leu</item>
+        <item>Russian Ruble</item>
+        <item>Swedish Krona</item>
+        <item>Singapore Dollar</item>
+        <item>Baht</item>
+        <item>Turkish Lira</item>
+        <item>US Dollar</item>
+        <item>Rand</item>
+    </string-array>
+</resources>

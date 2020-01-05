@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Elevation -->
+    <dimen name="elevation_normal">4dp</dimen>
+
+    <!-- Spacing -->
+    <dimen name="spacing_normal">16dp</dimen>
+
+    <!-- Font -->
+    <dimen name="font_rate_input">20sp</dimen>
+    <dimen name="font_title">16sp</dimen>
+    <dimen name="font_subtitle">14sp</dimen>
+
+    <!-- Rates screen related -->
+    <dimen name="rate_icon_size">40dp</dimen>
+</resources>

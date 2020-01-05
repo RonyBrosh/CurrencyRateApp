@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="rate_currencies">
+        <item>EUR</item>
+        <item>AUD</item>
+        <item>BGN</item>
+        <item>BRL</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>CZK</item>
+        <item>DKK</item>
+        <item>GBP</item>
+        <item>HKD</item>
+        <item>HRK</item>
+        <item>HUF</item>
+        <item>IDR</item>
+        <item>ILS</item>
+        <item>INR</item>
+        <item>ISK</item>
+        <item>JPY</item>
+        <item>KRW</item>
+        <item>MXN</item>
+        <item>MYR</item>
+        <item>NOK</item>
+        <item>NZD</item>
+        <item>PHP</item>
+        <item>PLN</item>
+        <item>RON</item>
+        <item>RUB</item>
+        <item>SEK</item>
+        <item>SGD</item>
+        <item>THB</item>
+        <item>TRY</item>
+        <item>USD</item>
+        <item>ZAR</item>
+    </string-array>
+
+    <integer-array name="rate_icons">
+        <item>@drawable/ic_european_union</item>
+        <item>@drawable/ic_australia</item>
+        <item>@drawable/ic_bulgaria</item>
+        <item>@drawable/ic_brazil</item>
+        <item>@drawable/ic_canada</item>
+        <item>@drawable/ic_switzerland</item>
+        <item>@drawable/ic_china</item>
+        <item>@drawable/ic_czech_republic</item>
+        <item>@drawable/ic_denmark</item>
+        <item>@drawable/ic_united_kingdom</item>
+        <item>@drawable/ic_hong_kong</item>
+        <item>@drawable/ic_croatia</item>
+        <item>@drawable/ic_hungary</item>
+        <item>@drawable/ic_indonesia</item>
+        <item>@drawable/ic_israel</item>
+        <item>@drawable/ic_india</item>
+        <item>@drawable/ic_iceland</item>
+        <item>@drawable/ic_japan</item>
+        <item>@drawable/ic_south_korea</item>
+        <item>@drawable/ic_mexico</item>
+        <item>@drawable/ic_malaysia</item>
+        <item>@drawable/ic_norway</item>
+        <item>@drawable/ic_new_zealand</item>
+        <item>@drawable/ic_philippines</item>
+        <item>@drawable/ic_poland</item>
+        <item>@drawable/ic_romania</item>
+        <item>@drawable/ic_russia</item>
+        <item>@drawable/ic_sweden</item>
+        <item>@drawable/ic_singapore</item>
+        <item>@drawable/ic_thailand</item>
+        <item>@drawable/ic_turkey</item>
+        <item>@drawable/ic_united_states</item>
+        <item>@drawable/ic_south_africa</item>
+    </integer-array>
+</resources>

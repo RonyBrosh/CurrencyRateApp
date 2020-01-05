@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Title">
+        <item name="android:textSize">@dimen/font_title</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:font">@font/roboto_medium</item>
+    </style>
+
+    <style name="Subtitle">
+        <item name="android:textSize">@dimen/font_subtitle</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:font">@font/roboto_regular</item>
+    </style>
+
+</resources>
