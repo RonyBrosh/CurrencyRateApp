@@ -10,5 +10,3 @@ In this project I used:
 
 ### Running/Testing the app
 Checkout the repository (or download), sync and deploy to an Android emulator or real device.
-
-
