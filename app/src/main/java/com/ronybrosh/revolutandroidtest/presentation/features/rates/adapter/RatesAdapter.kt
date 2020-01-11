@@ -21,6 +21,7 @@ class RatesAdapter(private val listener: RateAdapterListener) :
     interface RateAdapterListener {
         fun updateRatesConversion(amountAsString: String, currencyRate: Float)
         fun updateTopItemIndex(oldIndex: Int)
+        fun onNoFocusedAmountField()
     }
 
     inner class RateViewHolder(view: View) : RecyclerView.ViewHolder(view), TextWatcher,
@@ -73,8 +74,17 @@ class RatesAdapter(private val listener: RateAdapterListener) :
 
         override fun onFocusChange(v: View?, hasFocus: Boolean) {
             // If the focused input is not the top most, update it to top index
-            if (hasFocus.and(adapterPosition > 0))
+            if (hasFocus.and(adapterPosition > 0)) {
                 listener.updateTopItemIndex(adapterPosition)
+                return
+            }
+
+            // If amount edit text lost focus, maybe we don't have any focused amount edit text.
+            // In this case we should hide the keyboard.
+            // This will be handled by the context (activity/ fragment)
+            // because we need the parent (recycler view) to verify no other child (edit text) have focus.
+            if (!hasFocus)
+                listener.onNoFocusedAmountField()
         }
 
         override fun onClick(v: View?) {
