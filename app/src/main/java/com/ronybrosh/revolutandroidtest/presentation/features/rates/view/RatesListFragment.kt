@@ -55,11 +55,13 @@ class RatesListFragment : DaggerFragment(), RatesAdapter.RateAdapterListener {
     override fun onResume() {
         super.onResume()
         observeNoFocusedAmountField()
+        viewModel.toggleRefreshRatesInterval(true)
     }
 
     override fun onPause() {
         super.onPause()
         compositeDisposable.clear()
+        viewModel.toggleRefreshRatesInterval(false)
     }
 
     override fun onCreateView(

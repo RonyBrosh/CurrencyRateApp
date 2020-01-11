@@ -44,10 +44,6 @@ class RatesViewModel(
     }
 
     fun getResult(): LiveData<UIRateResource> {
-        // Only if we have a subscriber we wan't to start the interval.
-        if (compositeDisposable.size() == 0)
-            startFetchingRatesInterval()
-
         return result
     }
 
@@ -64,6 +60,13 @@ class RatesViewModel(
                 content = uiRateUtil.moveToTopOfList(fromIndex, result.value?.content)
             )
         }
+    }
+
+    fun toggleRefreshRatesInterval(isStart: Boolean) {
+        if (isStart)
+            startFetchingRatesInterval()
+        else
+            compositeDisposable.clear()
     }
 
     private fun startFetchingRatesInterval() {
@@ -88,6 +91,7 @@ class RatesViewModel(
                     }
                 }
         }
+        compositeDisposable.clear()
         compositeDisposable.add(disposable)
     }
 
