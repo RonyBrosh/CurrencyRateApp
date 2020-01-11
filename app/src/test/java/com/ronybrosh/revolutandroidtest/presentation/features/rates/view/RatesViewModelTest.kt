@@ -216,9 +216,8 @@ class RatesViewModelTest {
             .thenReturn(TestContentUtil.uiRateList_2)
 
         // Act
-        val liveData = viewModel.getResult()
+        viewModel.getResult().observeForever(uiRateListObserver)
         viewModel.toggleRefreshRatesInterval(true)
-        liveData.observeForever(uiRateListObserver)
         latch.await(1500, TimeUnit.MILLISECONDS)
 
         // Assert

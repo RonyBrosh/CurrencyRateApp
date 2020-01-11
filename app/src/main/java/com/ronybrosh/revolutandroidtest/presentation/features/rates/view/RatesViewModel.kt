@@ -70,27 +70,28 @@ class RatesViewModel(
     }
 
     private fun startFetchingRatesInterval() {
-        val disposable = Observable.interval(1, TimeUnit.SECONDS).startWith(0).subscribe {
-            ratesRepository.getRateList().observeOn(AndroidSchedulers.mainThread())
-                .subscribe { resource ->
-                    when (resource) {
-                        is Resource.Loading -> loading.value = true
-                        is Resource.Success -> {
-                            if (loading.value != false)
-                                loading.value = false
-
-                            if (error.value != null)
-                                error.value = null
-
-                            onFetchedNewRateList(resource.data)
-                        }
-                        is Resource.Error -> {
+        val disposable = Observable.interval(1, TimeUnit.SECONDS)
+            .startWith(0)
+            .flatMap { ratesRepository.getRateList() }
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe { resource ->
+                when (resource) {
+                    is Resource.Loading -> loading.value = true
+                    is Resource.Success -> {
+                        if (loading.value != false)
                             loading.value = false
-                            error.value = UIError(R.string.rates_screen_get_rates_error)
-                        }
+
+                        if (error.value != null)
+                            error.value = null
+
+                        onFetchedNewRateList(resource.data)
+                    }
+                    is Resource.Error -> {
+                        loading.value = false
+                        error.value = UIError(R.string.rates_screen_get_rates_error)
                     }
                 }
-        }
+            }
         compositeDisposable.clear()
         compositeDisposable.add(disposable)
     }
