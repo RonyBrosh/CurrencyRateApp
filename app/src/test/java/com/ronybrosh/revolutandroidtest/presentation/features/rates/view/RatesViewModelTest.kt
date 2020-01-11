@@ -105,6 +105,7 @@ class RatesViewModelTest {
 
         // Act
         viewModel.getResult().observeForever(uiRateListObserver)
+        viewModel.toggleRefreshRatesInterval(true)
         latch.await(5, TimeUnit.SECONDS)
 
         // Assert
@@ -133,6 +134,7 @@ class RatesViewModelTest {
         // Act
         viewModel.getLoading().observeForever(loadingObserver)
         viewModel.getResult().observeForever(uiRateListObserver)
+        viewModel.toggleRefreshRatesInterval(true)
 
         // Assert
         inOrder.verify(loadingObserver, times(2)).onChanged(loadingCaptor.capture())
@@ -162,6 +164,7 @@ class RatesViewModelTest {
 
         // Act
         viewModel.getResult().observeForever(uiRateListObserver)
+        viewModel.toggleRefreshRatesInterval(true)
 
         // Assert
         verify(uiRateListObserver).onChanged(uiRateListCaptor.capture())
@@ -181,6 +184,7 @@ class RatesViewModelTest {
         // Act
         viewModel.getError().observeForever(errorObserver)
         viewModel.getResult().observeForever(uiRateListObserver)
+        viewModel.toggleRefreshRatesInterval(true)
 
         // Assert
         verify(errorObserver).onChanged(errorCaptor.capture())
@@ -213,6 +217,7 @@ class RatesViewModelTest {
 
         // Act
         val liveData = viewModel.getResult()
+        viewModel.toggleRefreshRatesInterval(true)
         liveData.observeForever(uiRateListObserver)
         latch.await(1500, TimeUnit.MILLISECONDS)
 
@@ -274,6 +279,7 @@ class RatesViewModelTest {
 
         // Act
         viewModel.getResult().observeForever(uiRateListObserver)
+        viewModel.toggleRefreshRatesInterval(true)
         viewModel.updateRatesConversion("2", 1F)
 
         // Assert
@@ -321,6 +327,7 @@ class RatesViewModelTest {
 
         // Act
         viewModel.getResult().observeForever(uiRateListObserver)
+        viewModel.toggleRefreshRatesInterval(true)
         viewModel.moveToTopOfList(lastItemIndex)
 
         // Assert
