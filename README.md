@@ -1,4 +1,4 @@
-# RonBroshRevolutAndroidTest
+# CurrencyRateApp
 This project demonstrate currency rates conversion.
 
 In this project I used:
