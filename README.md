@@ -1,6 +1,7 @@
 # CurrencyRateApp
 This project demonstrate currency rates conversion.
 <a href="url"><img src="https://github.com/RonyBrosh/CurrencyRateApp/blob/master/images/CurrencyRateApp.gif" align="left" height="480" width="270" ></a>
+</br>
 
 In this project I used:
 * Clean architecture principles to separate the app layers dependencies and abstractions 
