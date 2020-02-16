@@ -3,8 +3,8 @@ This project demonstrate currency rates conversion app.</br>
 Every 1 second new rates information is fetched from the free rates remote api at https://revolut.duckdns.org/</br>
 You can click a rate from the list and it becomes your base rate for the conversion.
 Use your keyboard to convert the selected base rate to all other currencies LIVE!</br></br>
-<div><a href="url"><img src="https://github.com/RonyBrosh/CurrencyRateApp/blob/master/images/CurrencyRateApp.gif" align="left" height="480" width="270" ></a></div>
-</br></br>
+<a href="url"><img src="https://github.com/RonyBrosh/CurrencyRateApp/blob/master/images/CurrencyRateApp.gif" align="left" height="480" width="270" ></a>
+</br></br></br></br></br></br></br></br></br></br>
 
 In this project I used:
 * Clean architecture principles to separate the app layers dependencies and abstractions 
