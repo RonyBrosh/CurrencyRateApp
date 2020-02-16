@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ronybrosh.revolutandroidtest">
+    package="com.ronybrosh.currencyrateapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.ronybrosh.revolutandroidtest.app.App"
+        android:name="com.ronybrosh.currencyrateapp.app.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.ronybrosh.revolutandroidtest.presentation.features.MainActivity">
+        <activity android:name="com.ronybrosh.currencyrateapp.presentation.features.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

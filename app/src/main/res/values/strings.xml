@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RevolutAndroidTest</string>
+    <string name="app_name">CurrencyRateApp</string>
 
     <!-- Rates screen -->
     <string name="rates_screen_actionbar_title">Rates</string>
